@@ -1,0 +1,45 @@
+print 'English'
+print dbo.NumbersWords(8764)
+print dbo.NumbersWords(1234567)
+print dbo.NumbersWords(9732346)
+print dbo.NumbersWords(19356185)
+print dbo.NumbersWords(1569472451)
+print 'Portuguese'
+print dbo.NúmerosPalavras(8764)
+print dbo.NúmerosPalavras(1234567)
+print dbo.NúmerosPalavras(9732346)
+print dbo.NúmerosPalavras(19356185)
+print dbo.NúmerosPalavras(1569472451)
+print 'Spanish'
+print dbo.NúmerosPalabras(8764)
+print dbo.NúmerosPalabras(1234567)
+print dbo.NúmerosPalabras(9732346)
+print dbo.NúmerosPalabras(19356185)
+print dbo.NúmerosPalabras(1569472451)
+
+
+exec sayit 'Hello world'
+
+
+declare @words varchar(8000)
+print 'English'
+exec sp_NumbersWords 8764,@words out print @words
+exec sp_NumbersWords 1234567,@words out print @words
+exec sp_NumbersWords 9732346,@words out print @words
+exec sp_NumbersWords 19356185,@words out print @words
+exec sp_NumbersWords 1569472451,@words out print @words
+print 'Portuguese'
+exec sp_NúmerosPalavras 8764,@words out print @words
+exec sp_NúmerosPalavras 1234567,@words out print @words
+exec sp_NúmerosPalavras 9732346,@words out print @words
+exec sp_NúmerosPalavras 19356185,@words out print @words
+exec sp_NúmerosPalavras 1569472451,@words out print @words
+print 'Spanish'
+exec sp_NúmerosPalabras 8764,@words out print @words
+exec sp_NúmerosPalabras 1234567,@words out print @words
+exec sp_NúmerosPalabras 9732346,@words out print @words
+exec sp_NúmerosPalabras 19356185,@words out print @words
+exec sp_NúmerosPalabras 1569472451,@words out print @words
+
+
+
